@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seoul Kebab | Professional Halal Korean Grill</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-gray-800">
+
+    <header id="home" class="bg-white/90 backdrop-blur-lg shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#home" class="flex items-center space-x-3">
+                <svg class="w-8 h-8 text-[#D92323]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span class="text-2xl font-display text-gray-900">Seoul Kebab</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#menu" class="text-gray-600 hover:text-[#D92323] transition duration-300 font-medium">Menu</a>
+                <a href="#about" class="text-gray-600 hover:text-[#D92323] transition duration-300 font-medium">About</a>
+                <a href="#contact" class="text-gray-600 hover:text-[#D92323] transition duration-300 font-medium">Contact</a>
+                <a href="#contact" class="bg-[#D92323] text-white font-bold py-2 px-5 rounded-full hover:bg-red-700 transition duration-300">Order Online</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-800">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 border-t border-gray-200">
+            <a href="#menu" class="block py-2 text-gray-600 hover:text-[#D92323]">Menu</a>
+            <a href="#about" class="block py-2 text-gray-600 hover:text-[#D92323]">About</a>
+            <a href="#contact" class="block py-2 text-gray-600 hover:text-[#D92323]">Contact</a>
+            <a href="#contact" class="block mt-2 bg-[#D92323] text-white text-center font-bold py-2 px-4 rounded-full hover:bg-red-700">Order Online</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section with Video Background -->
+        <section class="relative h-[70vh] w-full flex items-center text-white overflow-hidden">
+            <!-- Video Background -->
+            <video autoplay loop muted playsinline class="absolute z-[-1] w-full h-full object-cover">
+                <source src="https://ia600701.us.archive.org/12/items/kebab-video-generation-complete/Kebab_Video_Generation_Complete.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+            <!-- Dark Overlay -->
+            <div class="absolute top-0 left-0 w-full h-full bg-black/60"></div>
+
+            <!-- Content -->
+            <div class="relative z-10 container mx-auto px-6">
+                <div class="max-w-3xl">
+                    <h1 class="text-4xl md:text-6xl font-display mb-4 leading-tight">Authentic Korean Flavours, Perfectly Grilled</h1>
+                    <p class="text-lg md:text-xl mb-8 font-light">Experience London's finest halal Korean kebabs. A fusion of tradition and innovation, served fresh daily.</p>
+                    <a href="#menu" class="bg-white text-[#D92323] font-bold py-3 px-8 rounded-full text-lg hover:bg-gray-200 transition duration-300">Explore The Menu</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-display mb-4">Our Commitment to Quality</h2>
+                        <p class="mb-4 text-gray-600">Seoul Kebab was founded on a passion for flavour and a commitment to quality. We blend traditional Korean recipes passed down through generations with the vibrant, multicultural food scene of London. Our mission is to provide an unforgettable culinary experience that is both authentic and innovative.</p>
+                        <p class="text-gray-600 font-medium">We are proud to serve a <strong>100% Halal menu</strong>, ensuring that every ingredient meets the highest standards of quality and preparation. From our marinated meats to our freshly prepared sauces and kimchi, every bite is a testament to our dedication.</p>
+                    </div>
+                    <div>
+                        <img src="https://shorturl.at/tQikw" alt="Seoul Kebab Team" class="rounded-lg shadow-xl w-full h-auto">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-display mb-4">Our Menu</h2>
+                    <div class="halal-badge">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        <span>100% HALAL GUARANTEE</span>
+                    </div>
+                </div>
+                
+                <div class="mb-12">
+                    <h3 class="text-2xl font-display mb-6 border-b-2 border-[#D92323] pb-2">Signature Kebabs</h3>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="menu-card">
+                            <img src="https://shorturl.at/sldxP" alt="Bulgogi Beef Kebab PNG">
+                            <div class="p-5">
+                                <h4 class="font-display text-xl mb-2">Bulgogi Beef Kebab</h4>
+                                <p class="text-gray-600 mb-4 text-sm">Marinated ribeye, kimchi slaw, gochujang mayo, crisp lettuce in a toasted flatbread.</p>
+                                <p class="font-bold text-lg text-[#D92323]">£12.50</p>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img src="https://i.ibb.co/ds36sF5F/Dakgalbi-Chicken-Kebab.png" alt="Dakgalbi-Chicken-Kebab" >
+                            <div class="p-5">
+                                <h4 class="font-display text-xl mb-2">Dakgalbi Chicken Kebab</h4>
+                                <p class="text-gray-600 mb-4 text-sm">Spicy grilled chicken, melted cheese, pickled radish, perilla leaves in a toasted flatbread.</p>
+                                <p class="font-bold text-lg text-[#D92323]">£11.50</p>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img src="https://placehold.co/600x400/F9FAFB/1F2937?text=Gochujang+Lamb+Kebab" alt="Gochujang Lamb Kebab PNG">
+                            <div class="p-5">
+                                <h4 class="font-display text-xl mb-2">Gochujang Lamb Kebab</h4>
+                                <p class="text-gray-600 mb-4 text-sm">Tender lamb leg marinated in gochujang, garlic sauce, cucumber kimchi in a toasted flatbread.</p>
+                                <p class="font-bold text-lg text-[#D92323]">£13.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-12">
+                    <h3 class="text-2xl font-display mb-6 border-b-2 border-[#D92323] pb-2">Korean Fried Chicken & Wings</h3>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="menu-card">
+                            <img src="https://placehold.co/600x400/F9FAFB/1F2937?text=Korean+Fried+Wings" alt="Korean Fried Wings PNG">
+                            <div class="p-5">
+                                <h4 class="font-display text-xl mb-2">Korean Fried Wings</h4>
+                                <p class="text-gray-600 mb-4 text-sm">6 extra-crispy wings tossed in your choice of Gochujang Glaze or Soy Garlic.</p>
+                                <p class="font-bold text-lg text-[#D92323]">£8.50</p>
+                            </div>
+                        </div>
+                         <div class="menu-card">
+                            <img src="https://placehold.co/600x400/F9FAFB/1F2937?text=Korean+Chicken+Tenders" alt="Korean Chicken Tenders PNG">
+                            <div class="p-5">
+                                <h4 class="font-display text-xl mb-2">Korean Chicken Tenders</h4>
+                                <p class="text-gray-600 mb-4 text-sm">4 crispy chicken tenders. Perfect for dipping in our house sauces.</p>
+                                <p class="font-bold text-lg text-[#D92323]">£7.50</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-display mb-6 border-b-2 border-[#D92323] pb-2">Loaded Fries & Sides</h3>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="menu-card">
+                            <img src="https://placehold.co/600x400/F9FAFB/1F2937?text=Loaded+Kimchi+Fries" alt="Loaded Kimchi Fries PNG">
+                            <div class="p-5">
+                                <h4 class="font-display text-xl mb-2">Loaded Kimchi Fries</h4>
+                                <p class="text-gray-600 mb-4 text-sm">Our house fries topped with kimchi, melted cheese, and gochujang mayo.</p>
+                                <p class="font-bold text-lg text-[#D92323]">£7.50</p>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img src="https://placehold.co/600x400/F9FAFB/1F2937?text=House+Fries" alt="House Fries PNG">
+                            <div class="p-5">
+                                <h4 class="font-display text-xl mb-2">House Fries</h4>
+                                <p class="text-gray-600 mb-4 text-sm">Perfectly seasoned, crispy and fluffy chips. The ideal side.</p>
+                                <p class="font-bold text-lg text-[#D92323]">£4.00</p>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img src="https://placehold.co/600x400/F9FAFB/1F2937?text=House+Kimchi" alt="House Kimchi PNG">
+                            <div class="p-5">
+                                <h4 class="font-display text-xl mb-2">House Kimchi Pot</h4>
+                                <p class="text-gray-600 mb-4 text-sm">A side pot of our authentic, house-fermented napa cabbage kimchi.</p>
+                                <p class="font-bold text-lg text-[#D92323]">£3.50</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="py-16 md:py-24 bg-gray-900 text-white">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-display mb-2">Get In Touch</h2>
+                    <p class="text-gray-400">Visit us or place your order for collection.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="bg-gray-800 p-8 rounded-lg">
+                        <h3 class="text-2xl font-display mb-4">Opening Hours</h3>
+                        <ul class="text-gray-300 space-y-2 mb-6">
+                            <li><strong>Mon - Thu:</strong> 12:00 PM - 10:00 PM</li>
+                            <li><strong>Fri - Sat:</strong> 12:00 PM - 11:30 PM</li>
+                            <li><strong>Sunday:</strong> 12:00 PM - 9:00 PM</li>
+                        </ul>
+                        
+                        <h3 class="text-2xl font-display mb-4">Contact Details</h3>
+                        <div class="space-y-3 text-gray-300">
+                            <p><strong>Address:</strong> 123 K-Town Road, London, E1 6PX</p>
+                            <p><strong>Phone:</strong> <a href="tel:020-1234-5678" class="text-[#D92323] hover:underline">020-1234-5678</a></p>
+                            <p><strong>Email:</strong> <a href="mailto:orders@seoulkebab.co.uk" class="text-[#D92323] hover:underline">orders@seoulkebab.co.uk</a></p>
+                        </div>
+                    </div>
+                    <div class="rounded-lg overflow-hidden">
+                         <img src="https://placehold.co/600x450/334155/e2e8f0?text=Map+to+Seoul+Kebab" alt="Map to Seoul Kebab" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 border-t border-gray-700 text-white">
+        <div class="container mx-auto px-6 py-6">
+            <p class="text-center text-gray-400">&copy; 2025 Seoul Kebab. Professional Halal Korean Grill. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
