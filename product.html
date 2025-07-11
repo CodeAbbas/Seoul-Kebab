@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product | Seoul Kebab</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white">
+
+    <header class="bg-white/90 backdrop-blur-lg shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-3">
+                <svg class="w-8 h-8 text-[#D92323]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span class="text-2xl font-display text-gray-900">Seoul Kebab</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html#menu" class="text-gray-600 hover:text-[#D92323] transition duration-300 font-medium">Menu</a>
+                <a href="index.html#about" class="text-gray-600 hover:text-[#D92323] transition duration-300 font-medium">About</a>
+                <a href="index.html#contact" class="text-gray-600 hover:text-[#D92323] transition duration-300 font-medium">Contact</a>
+            </div>
+             <button id="mobile-menu-button" class="md:hidden text-gray-800">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 border-t border-gray-200">
+            <a href="index.html#menu" class="block py-2 text-gray-600 hover:text-[#D92323]">Menu</a>
+            <a href="index.html#about" class="block py-2 text-gray-600 hover:text-[#D92323]">About</a>
+            <a href="index.html#contact" class="block py-2 text-gray-600 hover:text-[#D92323]">Contact</a>
+        </div>
+    </header>
+
+    <main class="py-12 md:py-20">
+        <div class="container mx-auto px-6">
+            <a href="index.html#menu" class="text-[#D92323] hover:underline mb-8 inline-block">&larr; Back to Menu</a>
+            
+            <div id="product-detail-container">
+                <p>Loading product...</p>
+            </div>
+        </div>
+        
+    </main>
+    <section id="contact" class="py-16 md:py-24 bg-gray-900 text-white">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-display mb-2">Get In Touch</h2>
+                    <p class="text-gray-400">Visit us or place your order for collection.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="bg-gray-800 p-8 rounded-lg">
+                        <h3 class="text-2xl font-display mb-4">Opening Hours</h3>
+                        <ul class="text-gray-300 space-y-2 mb-6">
+                            <li><strong>Mon - Thu:</strong> 12:00 PM - 10:00 PM</li>
+                            <li><strong>Fri - Sat:</strong> 12:00 PM - 11:30 PM</li>
+                            <li><strong>Sunday:</strong> 12:00 PM - 9:00 PM</li>
+                        </ul>
+                        
+                        <h3 class="text-2xl font-display mb-4">Contact Details</h3>
+                        <div class="space-y-3 text-gray-300">
+                            <p><strong>Address:</strong> 123 K-Town Road, London, E1 6PX</p>
+                            <p><strong>Phone:</strong> <a href="tel:020-1234-5678" class="text-[#D92323] hover:underline">020-1234-5678</a></p>
+                            <p><strong>Email:</strong> <a href="mailto:orders@seoulkebab.co.uk" class="text-[#D92323] hover:underline">orders@seoulkebab.co.uk</a></p>
+                        </div>
+                    </div>
+                    <div class="rounded-lg overflow-hidden">
+                         <img src="https://placehold.co/600x450/334155/e2e8f0?text=Map+to+Seoul+Kebab" alt="Map to Seoul Kebab" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+     <footer class="bg-gray-900 border-t border-gray-700 text-white">
+        <div class="container mx-auto px-6 py-6">
+            <p class="text-center text-gray-400">&copy; 2025 Seoul Kebab. Professional Halal Korean Grill. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
